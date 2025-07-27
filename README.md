@@ -7,39 +7,84 @@ DoctorsHub is a web-based healthcare platform designed to simplify the process o
 
 ### Object: User  
 **Context**: Patient  
-**Important Info**: First name, last name, date of birth, email, phone number, password, role = PATIENT
+**Important Info**: 
+
+     * First name, 
+     * last name
+     * date of birth 
+     * email
+     * phone number
+     * password
+     * role = PATIENT
 
 ### Object: Doctor  
 **Context**: Browsing and booking  
-**Important Info**: Name, specialization, experience, consultation fee, availability, rating
+**Important Info**: 
+	* Name,
+	* specialization
+	* experience
+	* consultation fee
+	* availability
+	* rating
 
 ### Object: Appointment  
 **Context**: Booking and tracking appointments  
-**Important Info**: Appointment ID, patient ID, doctor ID, date/time, status (BOOKED, CANCELLED, COMPLETED)
+**Important Info**: 
+	* Appointment ID
+	* patient ID
+	* doctor ID
+	* date/time
+	* status (BOOKED, CANCELLED, COMPLETED)
 
 ### Object: Payment  
 **Context**: Paying for appointments  
-**Important Info**: Razorpay Order ID, payment ID, invoice ID, amount, status (PENDING, SUCCESS, FAILED), appointment ID
+**Important Info**: 
+	* Razorpay Order ID
+	* payment ID
+	* invoice ID
+	* amount
+	* status (PENDING, SUCCESS, FAILED)
+	* appointment ID
 
 ### Object: Razorpay Gateway  
 **Context**: Online transaction processing  
-**Important Info**: API keys, verification status, callback URL, linked invoice ID
+**Important Info**: 
+	* API keys
+	* verification status
+	* callback URL
+	* linked invoice ID
 
 ### Object: Patient Dashboard  
 **Context**: Viewing patient-specific data  
-**Important Info**: List of appointments, payment status, profile info, option to update profile
+**Important Info**: 
+	* List of appointments
+	* payment status
+	* profile info
+	* option to update profile
 
 ### Object: Auth System  
 **Context**: Login and security  
-**Important Info**: JWT token, expiration, refresh token, role-based redirect (to patient or admin or doctor)
+**Important Info**: 
+	* JWT token
+	* expiration
+	* refresh token
+	* role-based redirect (to patient or admin or doctor)
 
 ### Object: Review  
 **Context**: Feedback after appointment  
-**Important Info**: Doctor ID, patient ID, rating (1-5), review text, date
+**Important Info**: 
+	* Doctor ID
+	* patient ID
+	* rating (1-5)
+	* review text
+	* date
 
 ### Object: Notification   
 **Context**: Reminders and alerts  
-**Important Info**: Appointment reminders, payment confirmation, doctor schedule changes
+**Important Info**: 
+	* Appointment reminders
+	* payment confirmation
+	* doctor schedule changes
 
 ## Context: Doctor 
 
